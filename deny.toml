@@ -37,10 +37,8 @@ default = "deny"
 
 [bans]
 multiple-versions = "deny"
-# TODO: Change back to "deny"
-# This currently doesn't work with git dependencies (even if the hash is fixed)
-# See <https://github.com/Leafwing-Studios/Emergence/issues/193>
-wildcards = "warn"
+wildcards = "deny"
+allow-wildcard-paths = true
 highlight = "all"
 # Certain crates/versions that will be skipped when doing duplicate detection.
 skip = [
